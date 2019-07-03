@@ -1,12 +1,13 @@
 package com.bootdo.system.config;
 
-import com.bootdo.system.filter.XssFilter;
-import com.google.common.collect.Maps;
+import java.util.Map;
+
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.Map;
+import com.bootdo.system.filter.XssFilter;
+import com.google.common.collect.Maps;
 
 @Configuration
 public class XssConfig{

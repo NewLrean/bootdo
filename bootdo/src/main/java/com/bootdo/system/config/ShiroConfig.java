@@ -1,13 +1,9 @@
 package com.bootdo.system.config;
 
-import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
-import com.bootdo.common.config.Constant;
-import com.bootdo.common.redis.shiro.RedisCacheManager;
-import com.bootdo.common.redis.shiro.RedisManager;
-import com.bootdo.common.redis.shiro.RedisSessionDAO;
-import com.bootdo.system.shiro.UserRealm;
-//import org.apache.shiro.cache.CacheManager;
-import net.sf.ehcache.CacheManager;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedHashMap;
+
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.session.SessionListener;
@@ -18,17 +14,19 @@ import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSource
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cache.ehcache.EhCacheCacheManager;
-import org.springframework.cache.ehcache.EhCacheManagerFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.ClassPathResource;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedHashMap;
+import com.bootdo.common.config.Constant;
+import com.bootdo.common.redis.shiro.RedisCacheManager;
+import com.bootdo.common.redis.shiro.RedisManager;
+import com.bootdo.common.redis.shiro.RedisSessionDAO;
+import com.bootdo.system.shiro.UserRealm;
+
+import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+//import org.apache.shiro.cache.CacheManager;
+import net.sf.ehcache.CacheManager;
 
 /**
  * @author bootdo 1992lcg@163.com

@@ -1,9 +1,9 @@
 package com.bootdo.system.service.impl;
 
-import com.bootdo.system.domain.UserDO;
-import com.bootdo.system.domain.UserOnline;
-import com.bootdo.system.domain.UserToken;
-import com.bootdo.system.service.SessionService;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 import org.apache.shiro.session.Session;
 import org.apache.shiro.session.mgt.eis.SessionDAO;
 import org.apache.shiro.subject.SimplePrincipalCollection;
@@ -11,10 +11,9 @@ import org.apache.shiro.subject.support.DefaultSubjectContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.security.Principal;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import com.bootdo.system.domain.UserDO;
+import com.bootdo.system.domain.UserOnline;
+import com.bootdo.system.service.SessionService;
 
 /**
  * 待完善
